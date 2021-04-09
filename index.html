@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiently-CSS Gradient Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Yesteryear&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bcf613a3d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navigationbar">
+        <div class="leftnav"><a href="./colorgrid/indi.html"><i class="fas fa-border-all"></i></a></div>
+        <div class="centernav"><a href="index.html"><span class="logo">Gradiently</span></a> </div>
+        <div class="rightnav">
+            
+        </div>
+    </nav>
+    <main class="mainbody" id="maindiv" >
+        <div class="gradients">
+
+            <div class="color1" id="color1name">
+                <div class="color1display" id="color1display"></div>
+                <div class="color1nametext" id="color1nametext" ></div>
+            </div>
+            <div class="color2" id="color2name">
+                <div class="color2display" id="color2display"></div>
+                <div class="color2nametext" id="color2nametext" ></div>
+            </div>
+        </div>
+        <div class="previous" id="prev" >
+            <button class="prevbtn" id="prevbtn" onclick="displayprev()">
+                <i class="fas fa-arrow-left"></i>
+            </button>
+        </div>
+        <div class="next" id="nxt">
+            <button class="nextbtn" id="nxtbtn" onclick="displaynext()">
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="css">
+            <button id="getcss" onclick="getcss()">Generate CSS</button>
+        </div>
+        <div id="csstext" class="csstext">
+            <div class="cancelbtn">
+                <button id="cancel" onclick="cancelclicked()"><i class="far fa-window-close"></i></button>
+            </div>
+            <div class="csscodetext" id="csscodetext">
+
+            </div>
+            <div class="copycss">
+                <button id="copycssbtn" class="copycssbtn" onclick="copy()">Copy CSS</button>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
